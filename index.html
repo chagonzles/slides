@@ -10,20 +10,19 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600" rel="stylesheet">
 </head>
-<body class="fade-in">
-
-    <div class="row navbar" id="header">
+<body>
+    <div class="row" id="header">
         <div class="col-2 col-s-3 sm-hidden">
             <h1 id="brand-name">slides</h1>
         </div>
         <div class="col-8 col-s-6">
-                <ul id="menus">
-                    <li data-menuanchor="homePage"><a href="#homePage">Home</a></li>
-                    <li data-menuanchor="pricingPage"><a href="#pricingPage">Pricing</a></li>
-                    <li data-menuanchor="aboutPage"><a href="#aboutPage">About us</a></li>
-                </ul>
+            <ul id="menus">
+                <li data-menuanchor="home-page"><a href="#home-page">Home</a></li>
+                <li data-menuanchor="pricing-page"><a href="#pricing-page">Pricing</a></li>
+                <li data-menuanchor="about-page"><a href="#about-page">About us</a></li>
+            </ul>
         </div>
-        <div class="col-2 col-s-3 sm-hidden ">
+        <div class="col-2 col-s-3 sm-hidden">
             <button class="btn btn-default float-right">Profile</button>
         </div>
     </div>
@@ -39,23 +38,24 @@
         </div>
     </div>
     <div id="fullpage">
-        <div class="section" id="section1">
+        <div class="section" id="home-section">
             <div class="row">
                 <div class="col-2"></div>
                 <div class="col-8 text-center">
-                        <h1>slides</h1>
-                        <p class="sub-heading">Perfection is achieve, not when there is nothing more to add but when there is nothing to take away</p>
+                    <h1>slides</h1>
+                    <p class="sub-heading">Perfection is achieve, not when there is nothing more to add but when there is nothing to take away</p>
                     <button class="btn btn-primary">START FREE TRIAL</button>
                     <button class="btn btn-default">LEARN MORE</button>
                     <p>Want to know more? Click here</p>
                 </div>
                 <div class="col-2"></div>
             </div>
-            
-        </div>
-        <div class="section" id="section2">
-            <h1 id="heading">Pricing</h1>
+        </div><!-- #home-section -->
+        <div class="section" id="pricing-section">
             <div class="row">
+                <div class="col-12">
+                    <h1 id="heading">Pricing</h1>
+                </div>
                 <div class="col-1 col-l-2 col-s-2"></div>
                 <div class="col-10 col-l-8 col-s-8 text-center">
                     <div class="row pricing-row">
@@ -110,21 +110,19 @@
                 </div>
                 <div class="col-1 col-l-2 col-s-2"></div>
             </div>
-        </div>
-        <div class="section" id="section3">
-         
+        </div><!-- #pricing-section -->
+        <div class="section" id="about-section">
             <div class="row">
                 <div class="col-5">
                     <img src="img/mbp-mockup.png" alt="" id="mbp-img">
                 </div>
                 <div class="col-7" id="content-right">
-                   
-                    <div class="row" style="height: 100%">
-                        <div class="col-12 pb-0">
-                                <h1>I am creator</h1>
-                                <p>Scene generator allows you to create your own unique scenes by dragging and
-                                    dropping items into a special scene.
-                                </p>
+                    <div class="row">
+                        <div class="col-12">
+                            <h1>I am creator</h1>
+                            <p>Scene generator allows you to create your own unique scenes by dragging and
+                                dropping items into a special scene.
+                            </p>
                         </div>
                         <div class="col-6 col-s-6">
                             <div>
@@ -153,12 +151,12 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </div><!-- #about-section -->
+    </div><!-- #fullpage -->
     <script type="text/javascript" src="js/fullpage.js"></script>
     <script type="text/javascript">
         var myFullpage = new fullpage('#fullpage', {
-            anchors: ['homePage', 'pricingPage', 'aboutPage'],
+            anchors: ['home-page', 'pricing-page', 'about-page'],
             autoScrolling: true,
             navigation: true,
             scrollOverflow: true,
@@ -166,8 +164,6 @@
             menu: '#menus',
             easingcss3: 'cubic-bezier(0.175, 0.885, 0.320, 1.275)'
         });
-
-        // initialization();
 
         document.querySelector('#up-btn').addEventListener('click', function(e){
             e.preventDefault();
@@ -177,9 +173,6 @@
             e.preventDefault();
             fullpage_api.moveTo(3);
         });
-
     </script>
-    
 </body>
-
 </html>

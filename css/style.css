@@ -3,7 +3,8 @@ html, body, * {
 }
 
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-.fade-in {
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+body {
     opacity:0;  /* make things invisible upon start */
     -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
     -moz-animation:fadeIn ease-in 1;
@@ -18,6 +19,7 @@ html, body, * {
     animation-duration:1.25s;
 }
 
+/* TEXT CLASSES */
 .text-center {
     text-align: center;
 }
@@ -34,106 +36,21 @@ html, body, * {
     color: #b2bec3;
 }
 
-#fp-nav ul li a span, .fp-slidesNav ul li a span {
-    background: #fff !important;
-}
-
-#brand-name {
-    color: #fff;
-}
-
-#apple-logo {
-    width: 12px;
-}
-.navbar{
-    position: fixed;
-    z-index: 1000;
-    width: 100%;
-
-}
-
-#footer {
-    position: fixed;
-    height: 100px;
-    bottom: 0;
-    display: block;
-    width: 100%;
-    /* background: #333; */
-    z-index: 9;
-    text-align: center;
-    color: #f2f2f2;
-    padding: 20px 0 0 0;
-}
-
-#up-btn {
+/* ELEMENT CLASSES */
+.float-right {
     float: right;
-    opacity: .75;
-    background: #292E49;
-    padding: 8px;
-    border-radius: 50px;
-    width: 40px;
 }
 
-    #menus {
-        text-align: center;
-        z-index: 100;
-        padding-left: 0 !important;
-        padding-inline-start: 0 !important;
-    }
-
-#menus li {
-    display: inline-block;
-    color: #fff;    
-    margin: 10px;
-    font-weight: 600;
-    cursor: pointer;
-
+.icons {
+    width: 30px;
 }
 
-#menus li a {
-    text-decoration: none;
-    color: #fff;
-}
-
-
-.section {
-    background-size: cover;
-}
-
-#section1 {
-    background-image: url(../img/bg1.jpg);
-    background-image: linear-gradient(to bottom right,#66536976, #B3292E49), url('../img/bg1.jpg');
-    color: #fff;
-}
-
-#section2 {
-    background-image: url(../img/bg2.jpg);
-    background-image: linear-gradient(to bottom right, rgba(0, 47, 75, .5), rgba(220, 66, 37, .5)), url('../img/bg2.jpg');
-}
-
-#section3 {
-    background-image: url(../img/bg3.jpg);
-    background-image: linear-gradient(to bottom right, rgba(0, 47, 75, .5), rgba(220, 66, 37, .5)), url('../img/bg3.jpg');
-}
-
-
-#section1 h1 {
-    font-size: 10vw;
-    color: #fff;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
-#section1 p.sub-heading {
-    font-size: 1.5rem;
-}
-
+/* BUTTON CLASSESS */
 .btn {
     border-radius: 50px;
     padding: 10px 20px;
     border: none;
     min-height: 40px;
-    /* min-width: 120px; */
     font-weight: 600;
     margin-bottom: 15px;
 }
@@ -141,6 +58,7 @@ html, body, * {
 .btn-fluid {
     width: 85%;
 }
+
 .btn-default {
     background: #f7f3f2;
     color: #000;
@@ -155,11 +73,104 @@ html, body, * {
     background: #039085;
 }
 
-.float-right {
-    float: right;
+/* HEADER */
+#brand-name {
+    color: #fff;
 }
 
-#section2 #heading {
+#header {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+}
+
+#menus {
+    text-align: center;
+    z-index: 100;
+    padding-left: 0 !important;
+    padding-inline-start: 0 !important;
+}
+
+#menus li {
+    display: inline-block;
+    color: #fff;    
+    margin: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#menus li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* FOOTER */
+#footer {
+    position: fixed;
+    height: 100px;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    z-index: 9;
+    text-align: center;
+    color: #f2f2f2;
+    padding: 20px 0 0 0;
+}
+
+#apple-logo {
+    width: 12px;
+}
+
+#up-btn {
+    float: right;
+    opacity: .75;
+    background: #292E49;
+    padding: 8px;
+    border-radius: 50px;
+    width: 40px;
+}
+
+
+/* NAVIGATION */
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+    background: #fff;
+}
+
+
+/* SECTIONS */
+.section {
+    background-size: cover;
+}
+
+#home-section {
+    background-image: linear-gradient(to bottom right,#66536976, #B3292E49), url('../img/bg1.jpg');
+    color: #fff;
+}
+
+#pricing-section {
+    background-image: linear-gradient(to bottom right, rgba(0, 47, 75, .5), rgba(220, 66, 37, .5)), url('../img/bg2.jpg');
+}
+
+#about-section {
+    background-image: linear-gradient(to bottom right, rgba(0, 47, 75, .5), rgba(220, 66, 37, .5)), url('../img/bg3.jpg');
+}
+
+
+/* HOME SECTION */
+#home-section h1 {
+    font-size: 10vw;
+    color: #fff;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#home-section p.sub-heading {
+    font-size: 1.5rem;
+}
+
+/* PRICING SECTION */
+#pricing-section #heading {
     color: #fff;
     text-align: center;
 }
@@ -168,9 +179,8 @@ html, body, * {
     max-width: 320px;
     margin: 0 auto;
 }
+
 .pricing-col {
-    /* height: 80vh */
-    /* height: 500px; */
     text-align: center;
     background: #fff;
     -moz-transition: background-color .5s ease-in;
@@ -181,6 +191,10 @@ html, body, * {
 
 .pricing-col button {
     background: #f3015c;
+    -moz-transition: background-color .5s ease-in;
+    -o-transition: background-color .5s ease-in;
+    -webkit-transition: background-color .5s ease-in;
+    transition: background-color .5s ease-in;
 }
 
 .pricing-col:hover {
@@ -190,6 +204,7 @@ html, body, * {
 .pricing-col:hover button {
     background: #039085;
 }
+
 .pricing-col:first-child {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -223,8 +238,8 @@ ul.features li {
     margin: 5px 0px 5px 0px;
 }
 
+/* ABOUT SECTION */
 #mbp-img {
-    /* width: 150%; */
     margin-left: -60%;
 }
 
@@ -232,22 +247,26 @@ ul.features li {
     color: #fff;
 }
 
-.pt-0 {
-    padding-top: 0px;
-}
-
-.pb-0 {
-    padding-bottom: 0px;
-}
-
-
 #content-right h4, #content-right p {
     margin: 10px 0 10px 0;
 }
 
-.icons {
-    width: 30px;
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+    .sm-hidden {
+        display: none;
+    }
+
+    #content-right {
+      height: 100%;
+    }
+
+    #mbp-img {
+      width: 90%;
+    }
 }
+
 @media only screen and (min-width: 768px) {  
     #menus li {
         font-size: 1.25rem;
@@ -266,7 +285,6 @@ ul.features li {
         font-size: 6rem;
     }
 
-
     .pricing-col:first-child {
         border-top-left-radius: 20px;
         border-top-right-radius: 0px;
@@ -284,6 +302,23 @@ ul.features li {
         margin: 0 auto;
     }
 
-
-    
+    #mbp-img {
+        width: 120%;
+    }
 }
+
+@media only screen and (min-width: 992px) {
+    #mbp-img {
+      width: 150%;
+    }
+
+    #footer .col-s-4 {
+      font-size: 1rem;
+    }
+
+    #apple-logo {
+      width: 18px !important;
+    }
+} 
+
+  

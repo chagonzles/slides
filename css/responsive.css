@@ -1,37 +1,23 @@
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
 
 .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+  content: "";
+  clear: both;
+  display: table;
+}
   
-  [class*="col-"] {
-    float: left;
-    padding: 15px;
-  }
-
-  
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
 
 [class*="col-"] {
-    width: 100%;
-  }
+  width: 100%;
+}
 
-  @media only screen and (min-width: 320px) and (max-width: 479px) {
-    .sm-hidden {
-        display: none;
-    }
-
-    #content-right {
-      height: 100%;
-    }
-
-    #mbp-img {
-      width: 90%;
-    }
-  }
+  
   
 
   @media only screen and (min-width: 320px) {
@@ -74,10 +60,6 @@
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
-
-    #mbp-img {
-      width: 120%;
-    }
   }
   
 
@@ -94,16 +76,6 @@
     .col-l-10 {width: 83.33%;}
     .col-l-11 {width: 91.66%;}
     .col-l-12 {width: 100%;}
-    #mbp-img {
-      width: 150%;
-    }
-
-    #footer .col-s-4 {
-      font-size: 1rem;
-    }
-    #apple-logo {
-      width: 18px !important;
-  }
   } 
 
   
