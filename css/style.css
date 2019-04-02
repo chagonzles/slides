@@ -255,7 +255,7 @@ ul.features li {
 /* MEDIA QUERIES */
 @media only screen and (min-width: 320px) and (max-width: 479px) {
     .sm-hidden {
-        display: none;
+        display: none !important;
     }
 
     #content-right {
@@ -264,6 +264,18 @@ ul.features li {
 
     #mbp-img {
       width: 90%;
+    }
+}
+
+@media only screen and (min-width: 320px) {
+    #footer .col-s-4 {
+        font-size: x-small;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    #mbp-img {
+        width: 80%;
     }
 }
 
