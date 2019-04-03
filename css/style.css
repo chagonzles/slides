@@ -292,7 +292,7 @@ ul.features li {
 }
 
 @media only screen and (min-width: 320px) {
-    #footer .col-s-4 {
+    #footer div.col-xs-4 {
         font-size: x-small;
     }
 }
