@@ -1,5 +1,25 @@
+/* FONTS */
+@font-face {
+    font-family: "Montserrat Regular";
+    src: url("../fonts/Montserrat-Regular.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: "Montserrat Light";
+    src: url("../fonts/Montserrat-Light.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: "Montserrat SemiBold";
+    src: url("../fonts/Montserrat-SemiBold.ttf") format("opentype");
+}
+
 html, body, * {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Regular', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat SemiBold';
 }
 
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
@@ -29,7 +49,8 @@ body {
 }
 
 .text-bold {
-    font-weight: bold;
+    font-weight: 600;
+    font-family: 'Montserrat SemiBold';
 }
 
 .text-muted {
@@ -52,6 +73,7 @@ body {
     border: none;
     min-height: 40px;
     font-weight: 600;
+    font-family: 'Montserrat SemiBold';
     margin-bottom: 15px;
 }
 
@@ -96,6 +118,7 @@ body {
     color: #fff;    
     margin: 10px;
     font-weight: 600;
+    font-family: 'Montserrat SemiBold';
     cursor: pointer;
 }
 
@@ -225,6 +248,7 @@ body {
 .price .price-amt {
     font-size: 3rem;
     font-weight: 300;
+    font-family: 'Montserrat Light';
 }
 
 ul.features {

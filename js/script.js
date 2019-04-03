@@ -5,7 +5,11 @@ var myFullpage = new fullpage('#fullpage', {
     scrollOverflow: true,
     navigationPosition: 'right',
     menu: '#menus',
-    easingcss3: 'cubic-bezier(0.175, 0.885, 0.320, 1.275)'
+    easing: 'easeInOutCubic',
+    easingcss3: 'ease',
+    keyboardScrolling: true,
+    animateAnchor: true,
+    paddingBottom: '10px'
 });
 
 document.querySelector('#up-btn').addEventListener('click', function(e){
