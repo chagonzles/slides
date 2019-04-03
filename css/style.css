@@ -154,6 +154,10 @@ body {
     width: 40px;
 }
 
+#down-btn {
+    margin-top: 10px;
+}
+
 
 /* NAVIGATION */
 #fp-nav ul li a span, .fp-slidesNav ul li a span {
