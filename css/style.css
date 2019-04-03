@@ -437,6 +437,14 @@ body.fp-viewing-about-page #about-section #about-content-col {
     #mbp-img {
         width: 120%;
     }
+
+    #footer div.col-xs-4 {
+        font-size: 1rem !important;
+    }
+
+    #footer #apple-logo {
+      width: 18px !important;
+    }
 }
 
 @media only screen and (min-width: 992px) {
@@ -446,9 +454,5 @@ body.fp-viewing-about-page #about-section #about-content-col {
 
     #footer .col-s-4 {
       font-size: 1rem;
-    }
-
-    #apple-logo {
-      width: 18px !important;
     }
 } 
