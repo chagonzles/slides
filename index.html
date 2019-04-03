@@ -6,22 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Slides</title>
     <link rel="stylesheet" type="text/css" href="css/fullpage.min.css" />
+    <link rel="stylesheet" href="css/responsive-nav.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="row" id="header">
-        <div class="col-2 col-s-3 sm-hidden">
+        <div class="col-2 col-s-2">
             <h1 id="brand-name">slides</h1>
         </div>
-        <div class="col-8 col-s-6">
-            <ul id="menus">
-                <li data-menuanchor="home-page"><a href="#home-page">Home</a></li>
-                <li data-menuanchor="pricing-page"><a href="#pricing-page">Pricing</a></li>
-                <li data-menuanchor="about-page"><a href="#about-page">About us</a></li>
-            </ul>
+        <div class="col-8 col-s-8" id="menu-col">
+            <nav class="nav-collapse">
+                <ul id="menus">
+                    <li class="off-menu"><h1>slides</h1></li>
+                    <li data-menuanchor="home-page"><a href="#home-page">Home</a></li>
+                    <li data-menuanchor="pricing-page"><a href="#pricing-page">Pricing</a></li>
+                    <li data-menuanchor="about-page"><a href="#about-page">About us</a></li>
+                    <li class="off-menu"><button class="btn btn-default">Profile</button></li>
+                </ul>
+            </nav>
         </div>
-        <div class="col-2 col-s-3 sm-hidden">
+        <div class="col-2 col-s-2">
             <button class="btn btn-default float-right">Profile</button>
         </div>
     </div>
@@ -155,6 +160,7 @@
     <script type="text/javascript" src="js/fullpage.min.js"></script>
     <script type="text/javascript" src="js/scrolloverflow.min.js"></script>
     <script type="text/javascript" src="js/easings.min.js"></script>
+    <script type="text/javascript" src="js/responsive-nav.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

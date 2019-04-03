@@ -97,6 +97,7 @@ body {
 
 /* HEADER */
 #brand-name {
+    margin-top: 0px;
     color: #fff;
 }
 
@@ -104,6 +105,7 @@ body {
     position: fixed;
     z-index: 1000;
     width: 100%;
+    padding-top: 10px;
 }
 
 #menus {
@@ -351,18 +353,37 @@ body.fp-viewing-about-page #about-section #about-content-col {
 }
 
 
+#menus .off-menu {
+    display: none;
+}
+
 /* MEDIA QUERIES */
 @media only screen and (min-width: 320px) and (max-width: 479px) {
-    .sm-hidden {
-        display: none !important;
-    }
-
     #about-content-col {
       height: 100%;
     }
 
     #mbp-img {
       width: 90%;
+    }
+}
+
+@media only screen and (max-width: 639px) {
+    #header div:nth-child(1),
+    #header div:nth-child(3) {
+        display: none;
+    }
+
+    #header #menu-col {
+        width: 100%;
+    }
+
+    #header {
+        padding-top: 0;
+    }
+
+    #menus .off-menu {
+        display: inline-block;
     }
 }
 
