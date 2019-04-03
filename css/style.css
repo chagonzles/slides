@@ -192,13 +192,48 @@ body {
     font-size: 1.5rem;
 }
 
+/* HOME SECTION ANIMATION */
+#home-section h1 {
+    left: 200%;
+    position:relative;
+    transition: all 1000ms ease;
+}
+
+#home-section p {
+    opacity: 0;
+    transition: all 3500ms ease;
+}
+
+#home-section #start-trial-btn {
+    left: -120%;
+    position: relative;
+    transition: all 1200ms ease;
+}
+
+#home-section #learn-more-btn {
+    left: 120%;
+    position: relative;
+    transition: all 1200ms ease;
+}
+
+body.fp-viewing-home-page #home-section p {
+    opacity: 1;
+}
+
+body.fp-viewing-home-page #home-section h1,
+body.fp-viewing-home-page #home-section #start-trial-btn,
+body.fp-viewing-home-page #home-section #learn-more-btn {
+    left: 0%;
+}
+
+
 /* PRICING SECTION */
-#pricing-section #heading {
+#pricing-section h1 {
     color: #fff;
     text-align: center;
 }
 
-.pricing-row {
+#pricing-row {
     max-width: 320px;
     margin: 0 auto;
 }
@@ -262,17 +297,53 @@ ul.features li {
     margin: 5px 0px 5px 0px;
 }
 
+/* PRICING SECTION ANIMATION */
+#pricing-section #pricing-row {
+    left: -130%;
+    position:relative;
+    transition: all 1000ms ease;
+}
+
+#pricing-section h1 {
+    left: 150%;
+    position:relative;
+    transition: all 1500ms ease;
+}
+body.fp-viewing-pricing-page #pricing-section #pricing-row,
+body.fp-viewing-pricing-page #pricing-section h1 {
+    left: 0%;
+}
+
+
 /* ABOUT SECTION */
 #mbp-img {
     margin-left: -60%;
 }
 
-#content-right {
+#about-content-col {
     color: #fff;
 }
 
-#content-right h4, #content-right p {
+#about-content-col h4, #about-content-col p {
     margin: 10px 0 10px 0;
+}
+
+/* ABOUT SECTION ANIMATION */
+#about-section #mbp-img {
+    left: 150%;
+    position:relative;
+    transition: all 1200ms ease;
+}
+
+#about-section #about-content-col {
+    left: -150%;
+    position: relative;
+    transition: 1200ms ease;
+}
+
+body.fp-viewing-about-page #about-section #mbp-img,
+body.fp-viewing-about-page #about-section #about-content-col {
+    left: 0%;
 }
 
 
@@ -282,7 +353,7 @@ ul.features li {
         display: none !important;
     }
 
-    #content-right {
+    #about-content-col {
       height: 100%;
     }
 
@@ -333,7 +404,7 @@ ul.features li {
         border-bottom-left-radius: 0px;
     }
 
-    .pricing-row {
+    #pricing-row {
         max-width: 100%;
         margin: 0 auto;
     }
@@ -356,5 +427,3 @@ ul.features li {
       width: 18px !important;
     }
 } 
-
-  
